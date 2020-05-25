@@ -44,7 +44,7 @@ function getRandomNumber() {
 function printQuote(){
     var chosenQuote = getRandomNumber(quotes);
     var  message = '<p class="quote">' +  chosenQuote.quote + '</p>';
-     printHTML += '<p class="source">' + chosenQuote.source;
+     message += '<p class="source">' + chosenQuote.source;
       //chosenQuote.citation + chosenQuote.year </p>'
   if (chosenQuote.citation) {
         message += '<span class= "citation"> ' + chosenQuote.citation + '</span>';
