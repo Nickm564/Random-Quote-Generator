@@ -42,8 +42,8 @@ function getRandomNumber() {
 
 //create function for printing random quote based on string of html added to the message variable
 function printQuote(){
-      chosenQuote = getRandomNumber(quotes);
-      message = '<p class="quote">' +  chosenQuote.quote + '</p>';
+    var chosenQuote = getRandomNumber(quotes);
+    var  message = '<p class="quote">' +  chosenQuote.quote + '</p>';
      printHTML += '<p class="source">' + chosenQuote.source;
       //chosenQuote.citation + chosenQuote.year </p>'
   if (chosenQuote.citation) {
